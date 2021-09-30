@@ -1,0 +1,87 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+#container {
+    width: 600px;
+    height: 900px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background: #6D6027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #D3CBB8, #6D6027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #D3CBB8, #6D6027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#chat-room {
+    width: 600px;
+    height: 750px;
+    /* background-color: pink; */
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-holder {
+    width: 600px;
+    height: 150px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#chat-holder button {
+    margin: 15px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    display: inline;
+}
+
+.message-holder {
+    display: block;
+}
+
+#input-name, #input-message {
+    height: 30px;
+    margin: 10px 0;
+    padding-left: 10px;
+    border-radius: 10px;
+    display: block;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+#input-message {
+    width: 400px;
+}
+
+#input-name {
+    width: 180px;
+}
+
+.chat-box {
+    width: fit-content;
+    max-width: 280px;
+    height: auto;
+    padding: 30px;
+    background-color: coral;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.self {
+    align-self: flex-end;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: lightgreen;
+}

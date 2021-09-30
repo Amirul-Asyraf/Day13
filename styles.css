@@ -1,0 +1,234 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #1c0904;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 600px;
+    height: 885px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #faf1ed;
+    overflow: hidden;
+}
+
+#container-index {
+    width: 600px;
+    height: 200px;
+    background-color: #fff7f3;;
+    color: #1c0904;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#container-index input {
+    padding: 10px 60px;
+    border: 2px solid #f0c8af;
+    border-radius: 10px;
+    color: #4e4141;
+    background-color: #fefcfb;
+    text-align: center;
+}
+
+#chat-room {
+    width: 600px;
+    height: 680px;
+    overflow: scroll;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-room::-webkit-scrollbar {
+    display: none;
+  }
+
+#chat-holder {
+    width: 600px;
+    height: 135px;
+    background-color: #fff7f3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#chat-holder button {
+    margin: 15px 0;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    display: inline;
+    text-align: center;
+    background-color: #1c0904;
+    color: #fefcfb;
+}
+
+#chat-holder button:hover {
+    background-color: #fefcfb;
+    color: #1c0904;
+    border: 1px solid #1c0904;
+    /* animation-name: zoomInOut;
+    animation-duration: 0.5s;
+    animation-fill-mode: both; */
+}
+
+/* @keyframes zoomInOut {
+    0% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    75% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}  */
+
+.message-holder {
+    display: block;
+}
+
+#input-message {
+    width: 400px;
+    height: 30px;
+    margin: 10px 0;
+    padding-left: 10px;
+    border-radius: 10px;
+    color: #4e4141;
+    background-color: #fefcfb;
+    border: 2px solid #f0c8af;
+    display: block;
+}
+
+#user-name {
+    width: 180px;
+    margin-left: 10px;
+    color: #1c0904;
+}
+
+.chat-box {
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 265px;
+    height: auto;
+    padding: 30px;
+    background-color: #fcd87e;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    animation-name: flowInLeft;
+    animation-duration: .7s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+.name-box {
+    margin-left: 35px;
+    margin-bottom: 5px;
+}
+
+.self-name {
+    align-self: flex-end;
+    /* margin-top: 10px; */
+    margin-right: 35px;
+}
+
+.self {
+    align-self: flex-end;
+    margin-top: 5px;
+    margin-right: 25px;
+    background-color: #ffa680;
+    animation-name: flowInRight;
+    animation-duration: .7s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flowInLeft {
+    0% {
+        transform: translateX(-50px);
+    }
+
+    40% {
+        transform: translateX(50px);
+    }
+
+    75% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes flowInRight {
+    0% {
+        transform: translateX(25px);
+    }
+
+    40% {
+        transform: translateX(-20px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.room-title {
+    font-size: 28px;
+    color: #4e4141;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.line {
+    width: 550px;
+    height: 1px;
+    background-color: #4e4141;
+    margin: 20px auto;
+}
+
+#enter-btn {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    background-color: #1c0904;
+    color: #fefcfb;
+}
+
+.time {
+    font-size: 12px;
+    color: lightgrey;
+}
