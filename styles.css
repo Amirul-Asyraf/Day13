@@ -143,6 +143,7 @@ body {
     animation-duration: .7s;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
+    word-wrap: break-word;
 }
 
 .name-box {
