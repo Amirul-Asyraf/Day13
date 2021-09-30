@@ -58,8 +58,6 @@ firebase.database().ref('chat').child('message').on('child_added', function(snap
     chatRoom.append(nameText);
     chatRoom.append(chatBox);
 
-    inputMessage.value = '';
-
     chatRoom.scrollTo(0, chatRoom.scrollHeight);
 })
 
@@ -74,4 +72,6 @@ function sendMessage() {
     } else {
         alert('Need to type a message!')
     }
+
+    inputMessage.value = '';
 }
